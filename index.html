@@ -6,7 +6,7 @@
     <title>Revigore Acupuntura | Clínica Premium em São Paulo</title>
     <!-- Font Awesome 6 (Free Icons) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Google Fonts: Inter + Playfair Display -->
+    <!-- Google Fonts: Poppins + Playfair Display -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * {
@@ -15,52 +15,12 @@
             box-sizing: border-box;
         }
 
-        /* Variáveis CSS para tema claro (padrão) */
-        :root {
-            --bg-primary: #fefcf7;
-            --bg-secondary: #faf5eb;
-            --bg-card: #ffffff;
-            --bg-footer: #1e1c18;
-            --text-primary: #2c2b28;
-            --text-secondary: #5b5548;
-            --text-light: #7f715a;
-            --border-light: #f0eadd;
-            --border-card: #f1e9df;
-            --accent-gold: #b48c5c;
-            --accent-gold-dark: #9a6f42;
-            --accent-gold-light: #e7dcc8;
-            --whatsapp: #25D366;
-            --whatsapp-dark: #128C7E;
-            --shadow-sm: 0 6px 14px rgba(0,0,0,0.02);
-            --shadow-md: 0 20px 35px -12px rgba(0,0,0,0.1);
-            --transition: all 0.3s ease;
-        }
-
-        /* Tema escuro */
-        body.dark {
-            --bg-primary: #121212;
-            --bg-secondary: #1e1e1e;
-            --bg-card: #252525;
-            --bg-footer: #0a0a0a;
-            --text-primary: #e8e6e1;
-            --text-secondary: #b8b2a8;
-            --text-light: #9e978b;
-            --border-light: #2c2a26;
-            --border-card: #33302b;
-            --accent-gold: #d4a373;
-            --accent-gold-dark: #b88d5c;
-            --accent-gold-light: #3a3328;
-            --shadow-sm: 0 6px 14px rgba(0,0,0,0.2);
-            --shadow-md: 0 20px 35px -12px rgba(0,0,0,0.4);
-        }
-
         body {
             font-family: 'Inter', sans-serif;
-            background-color: var(--bg-primary);
-            color: var(--text-primary);
+            background-color: #fefcf7;
+            color: #2c2b28;
             scroll-behavior: smooth;
             line-height: 1.5;
-            transition: background-color 0.3s ease, color 0.2s ease;
         }
 
         /* Custom scroll */
@@ -68,10 +28,10 @@
             width: 8px;
         }
         ::-webkit-scrollbar-track {
-            background: var(--border-light);
+            background: #e9e3d5;
         }
         ::-webkit-scrollbar-thumb {
-            background: var(--accent-gold);
+            background: #b48c5c;
             border-radius: 8px;
         }
 
@@ -87,18 +47,13 @@
 
         /* Header / Nav */
         header {
-            background: var(--bg-primary);
+            background: #ffffffdd;
             backdrop-filter: blur(14px);
             position: sticky;
             top: 0;
             z-index: 100;
             box-shadow: 0 4px 20px rgba(0,0,0,0.02);
-            border-bottom: 1px solid var(--border-light);
-            transition: var(--transition);
-        }
-        body.dark header {
-            background: rgba(18, 18, 18, 0.95);
-            border-bottom-color: #2c2a26;
+            border-bottom: 1px solid #f0eadd;
         }
         .navbar {
             display: flex;
@@ -111,7 +66,7 @@
             font-size: 1.8rem;
             font-weight: 700;
             letter-spacing: -0.5px;
-            background: linear-gradient(135deg, var(--accent-gold), #c7a06b);
+            background: linear-gradient(135deg, #5f4c2b, #9b7b4c);
             background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
@@ -119,27 +74,26 @@
         .logo p {
             font-size: 0.75rem;
             letter-spacing: 2px;
-            color: var(--accent-gold);
+            color: #a08154;
             font-weight: 500;
         }
         .nav-links {
             display: flex;
             gap: 2rem;
             list-style: none;
-            align-items: center;
         }
         .nav-links a {
             text-decoration: none;
             font-weight: 500;
-            color: var(--text-primary);
+            color: #3f3a32;
             transition: 0.2s;
             font-size: 1rem;
         }
         .nav-links a:hover {
-            color: var(--accent-gold);
+            color: #c28a42;
         }
         .btn-whats-nav {
-            background: var(--whatsapp);
+            background: #25D366;
             padding: 8px 18px;
             border-radius: 40px;
             color: white !important;
@@ -149,37 +103,16 @@
             font-weight: 600;
         }
         .btn-whats-nav:hover {
-            background: var(--whatsapp-dark);
+            background: #128C7E;
             transform: scale(1.02);
-        }
-
-        /* Botão Toggle Tema */
-        .theme-toggle {
-            background: var(--bg-card);
-            border: 1px solid var(--border-light);
-            border-radius: 50px;
-            width: 44px;
-            height: 44px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            font-size: 1.3rem;
-            transition: var(--transition);
-            color: var(--accent-gold);
-        }
-        .theme-toggle:hover {
-            transform: scale(1.05);
-            background: var(--accent-gold-light);
         }
 
         /* Hero Section */
         .hero {
-            background: var(--bg-secondary);
+            background: linear-gradient(120deg, #faf5eb 0%, #f3ede3 100%);
             padding: 60px 0 70px;
             border-bottom-left-radius: 40px;
             border-bottom-right-radius: 40px;
-            transition: var(--transition);
         }
         .hero-grid {
             display: flex;
@@ -191,13 +124,13 @@
             flex: 1.2;
         }
         .hero-info .badge {
-            background: var(--accent-gold-light);
+            background: #e7dcc8;
             display: inline-block;
             padding: 6px 14px;
             border-radius: 40px;
             font-size: 0.8rem;
             font-weight: 600;
-            color: var(--accent-gold-dark);
+            color: #6a4e2a;
             margin-bottom: 20px;
         }
         .hero-info h1 {
@@ -205,11 +138,11 @@
             font-weight: 700;
             line-height: 1.2;
             margin-bottom: 20px;
-            color: var(--text-primary);
+            color: #2f2a24;
         }
         .hero-info p {
             font-size: 1.1rem;
-            color: var(--text-secondary);
+            color: #5b5548;
             margin-bottom: 28px;
             max-width: 500px;
         }
@@ -220,39 +153,67 @@
             margin-bottom: 30px;
         }
         .contact-card {
-            background: var(--bg-card);
+            background: white;
             border-radius: 32px;
             padding: 12px 20px;
             display: flex;
             align-items: center;
             gap: 12px;
-            box-shadow: var(--shadow-sm);
-            border: 1px solid var(--border-light);
-            transition: var(--transition);
+            box-shadow: 0 6px 14px rgba(0,0,0,0.02);
+            border: 1px solid #efe2d0;
         }
         .contact-card i {
             font-size: 1.4rem;
-            color: var(--accent-gold);
+            color: #b48c5c;
         }
-  .hero-img {
-    flex: 0.9;
+        .hero-img {
+            flex: 0.9;
+            background: url('https://placehold.co/600x500/f0e7db/a4814c?text=Acupuntura+Equilíbrio') no-repeat center center/cover;
+            border-radius: 48px;
+            min-height: 320px;
+            background-size: cover;
+            box-shadow: 0 20px 35px -12px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+        }
+        /* imagem placeholder premium - mas usamos uma imagem de acupuntura estilo stock */
+       .hero-img {
+    background-image: url('https://images.pexels.com/photos/4294420/pexels-photo-4294420.jpeg?auto=compress&cs=tinysrgb&w=800');
+    background-position: center 20%;
+    background-size: cover;
+    background-repeat: no-repeat;
     border-radius: 48px;
     min-height: 320px;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
     box-shadow: var(--shadow-md);
     transition: var(--transition);
-    background-image: url('https://images.pexels.com/photos/4294420/pexels-photo-4294420.jpeg?auto=compress&cs=tinysrgb&w=800');
 }
 
-/* Correção específica para dispositivos móveis */
+/* Em telas menores, a imagem vai para baixo do texto */
 @media (max-width: 768px) {
+    .hero-grid {
+        flex-direction: column-reverse; /* Imagem vai para baixo do texto */
+        /* Use flex-direction: column; se quiser a imagem em cima */
+        gap: 2rem;
+    }
+    
     .hero-img {
-        min-height: 280px;
         width: 100%;
+        min-height: 280px;
         background-position: center 30%;
-        background-size: cover;
+        flex: none; /* Remove o flex para não espremer */
+    }
+    
+    .hero-info {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .hero-info p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .contact-hero {
+        justify-content: center;
     }
 }
 
@@ -260,13 +221,12 @@
     .hero-img {
         min-height: 240px;
         background-position: center 35%;
-        background-size: cover;
     }
 }
 
         /* Botões gerais */
         .btn-primary {
-            background: var(--accent-gold);
+            background: #b48c5c;
             border: none;
             padding: 14px 28px;
             border-radius: 40px;
@@ -281,7 +241,7 @@
             text-decoration: none;
         }
         .btn-primary:hover {
-            background: var(--accent-gold-dark);
+            background: #9a6f42;
             transform: translateY(-2px);
         }
 
@@ -294,11 +254,11 @@
             font-size: 2.3rem;
             font-weight: 600;
             margin-bottom: 16px;
-            color: var(--text-primary);
+            color: #2c2b28;
         }
         .section-sub {
             text-align: center;
-            color: var(--text-light);
+            color: #7f715a;
             margin-bottom: 48px;
             max-width: 600px;
             margin-left: auto;
@@ -313,22 +273,22 @@
             margin-top: 20px;
         }
         .service-card {
-            background: var(--bg-card);
+            background: white;
             border-radius: 32px;
             padding: 28px 22px;
             text-align: center;
-            box-shadow: var(--shadow-sm);
+            box-shadow: 0 8px 22px rgba(0,0,0,0.03);
             transition: 0.25s ease;
-            border: 1px solid var(--border-card);
+            border: 1px solid #f1e9df;
         }
         .service-card:hover {
             transform: translateY(-6px);
             box-shadow: 0 20px 30px -12px rgba(0,0,0,0.08);
-            border-color: var(--accent-gold-light);
+            border-color: #e2d1bd;
         }
         .service-icon {
             font-size: 2.8rem;
-            color: var(--accent-gold);
+            color: #b48c5c;
             margin-bottom: 20px;
         }
         .service-card h3 {
@@ -336,15 +296,14 @@
             margin-bottom: 12px;
         }
         .service-card p {
-            color: var(--text-secondary);
+            color: #655e50;
         }
 
         /* Mapa + local */
         .map-section {
-            background: var(--bg-secondary);
+            background: #f7f2ea;
             border-radius: 60px;
             margin: 20px 0;
-            transition: var(--transition);
         }
         .map-container {
             display: flex;
@@ -360,23 +319,19 @@
             margin-bottom: 20px;
         }
         .address-box {
-            background: var(--bg-card);
+            background: white;
             border-radius: 28px;
             padding: 24px;
             margin: 24px 0;
-            box-shadow: var(--shadow-sm);
-            border: 1px solid var(--border-light);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.03);
         }
         .address-box i {
             font-size: 1.8rem;
-            color: var(--accent-gold);
+            color: #b48c5c;
             margin-right: 12px;
         }
         .btn-map {
             background: #2c3e50;
-        }
-        body.dark .btn-map {
-            background: #1e2f3a;
         }
         .map-iframe {
             flex: 1;
@@ -384,8 +339,8 @@
             height: 340px;
             border-radius: 32px;
             overflow: hidden;
-            box-shadow: var(--shadow-md);
-            border: 2px solid var(--bg-card);
+            box-shadow: 0 20px 28px -12px rgba(0,0,0,0.2);
+            border: 2px solid #fff;
         }
         iframe {
             width: 100%;
@@ -393,7 +348,7 @@
             border: 0;
         }
 
-        /* Galeria de imagens */
+        /* Galeria de imagens (serviços visuais) */
         .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -404,8 +359,8 @@
             border-radius: 28px;
             overflow: hidden;
             height: 220px;
-            background: var(--border-light);
-            box-shadow: var(--shadow-sm);
+            background: #e7dfd2;
+            box-shadow: 0 12px 18px -8px rgba(0,0,0,0.1);
             transition: 0.3s;
         }
         .gallery-item img {
@@ -423,7 +378,7 @@
             position: fixed;
             bottom: 30px;
             right: 30px;
-            background: var(--whatsapp);
+            background: #25D366;
             color: white;
             width: 60px;
             height: 60px;
@@ -438,18 +393,17 @@
             text-decoration: none;
         }
         .whatsapp-float:hover {
-            background: var(--whatsapp-dark);
+            background: #128C7E;
             transform: scale(1.08);
         }
 
         /* Footer */
         footer {
-            background: var(--bg-footer);
+            background: #1e1c18;
             color: #cfc6b8;
             padding: 48px 0 24px;
             border-top-left-radius: 40px;
             border-top-right-radius: 40px;
-            transition: var(--transition);
         }
         .footer-content {
             display: flex;
@@ -466,10 +420,6 @@
             color: #cfc6b8;
             text-decoration: none;
             margin-right: 20px;
-            transition: 0.2s;
-        }
-        .footer-links a:hover {
-            color: var(--accent-gold);
         }
         .copyright {
             text-align: center;
@@ -495,13 +445,13 @@
             .hero-img {
                 min-height: 260px;
             }
+        }
+        @media (max-width: 580px) {
             .nav-links {
                 gap: 1rem;
                 flex-wrap: wrap;
                 justify-content: center;
             }
-        }
-        @media (max-width: 580px) {
             .btn-whats-nav {
                 padding: 5px 12px;
                 font-size: 0.8rem;
@@ -524,11 +474,6 @@
                 <li><a href="#galeria">Galeria</a></li>
                 <li><a href="#localizacao">Localização</a></li>
                 <li><a href="#contato" class="btn-whats-nav"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
-                <li>
-                    <div class="theme-toggle" id="themeToggleBtn">
-                        <i class="fas fa-moon" id="themeIcon"></i>
-                    </div>
-                </li>
             </ul>
         </div>
     </div>
@@ -552,7 +497,7 @@
         </div>
     </section>
 
-    <!-- Serviços principais -->
+    <!-- Serviços principais com imagens ilustrativas -->
     <section id="servicos">
         <div class="container">
             <h2 class="section-title">Tratamentos que equilibram</h2>
@@ -582,8 +527,8 @@
         </div>
     </section>
 
-    <!-- Galeria de imagens -->
-    <section id="galeria" style="background: var(--bg-primary); transition: var(--transition);">
+    <!-- Galeria de imagens para mostrar serviços (imagens reais representativas) -->
+    <section id="galeria" style="background: #fdfaf5;">
         <div class="container">
             <h2 class="section-title">Ambiente acolhedor & tratamentos premium</h2>
             <div class="section-sub">Espaço projetado para seu conforto, privacidade e regeneração.</div>
@@ -596,11 +541,11 @@
         </div>
     </section>
 
-    <!-- Localização + Mapa -->
+    <!-- Localização + Mapa interativo -->
     <section id="localizacao" class="map-section">
         <div class="container map-container">
             <div class="map-info">
-                <h3><i class="fas fa-location-dot" style="color: var(--accent-gold);"></i> Nossa sede no Cambuci</h3>
+                <h3><i class="fas fa-location-dot" style="color:#b48c5c;"></i> Nossa sede no Cambuci</h3>
                 <p>Referência em acupuntura na zona sul-central de São Paulo. Estamos de portas abertas para recebê-lo com toda segurança e conforto.</p>
                 <div class="address-box">
                     <i class="fas fa-building"></i> <strong>Revigore Acupuntura</strong><br>
@@ -611,19 +556,20 @@
                 <a href="https://www.google.com/maps/dir/?api=1&destination=Av.+Lins+de+Vasconcelos,+1042,+Cambuci,+São+Paulo+-+SP,+01538-001" target="_blank" class="btn-primary btn-map"><i class="fas fa-directions"></i> Rotas com Google Maps</a>
             </div>
             <div class="map-iframe">
+                <!-- Embed Google Maps oficial com local exato -->
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.234567890123!2d-46.62345678901234!3d-23.571234567890123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5c0c0c0c0c0c%3A0x0c0c0c0c0c0c0c0c!2sAv.%20Lins%20de%20Vasconcelos%2C%201042%20-%20Cambuci%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001538-001!5e0!3m2!1spt-BR!2sbr!4v1712345678901!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </section>
 
-    <!-- Contato final CTA -->
+    <!-- Contato / CTA final com whatsapp -->
     <section id="contato" style="padding: 40px 0 70px;">
-        <div class="container" style="text-align: center; background: var(--bg-secondary); border-radius: 48px; padding: 52px 32px; transition: var(--transition);">
+        <div class="container" style="text-align: center; background: #f0e8dd; border-radius: 48px; padding: 52px 32px;">
             <h2 style="font-size: 2rem;">Pronto para uma vida mais leve?</h2>
             <p style="max-width: 500px; margin: 20px auto; font-size: 1.1rem;">Agende sua avaliação inicial e descubra como a acupuntura pode transformar sua saúde.</p>
             <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-                <a href="https://wa.me/5511992749668?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20tratamentos%20da%20Revigore!" target="_blank" class="btn-primary" style="background: var(--whatsapp); gap: 12px;"><i class="fab fa-whatsapp"></i> Conversar no WhatsApp</a>
-                <a href="tel:+5511992749668" style="background: transparent; border: 2px solid var(--accent-gold); color: var(--accent-gold);" class="btn-primary"><i class="fas fa-phone-alt"></i> Ligar agora</a>
+                <a href="https://wa.me/5511992749668?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20tratamentos%20da%20Revigore!" target="_blank" class="btn-primary" style="background: #25D366; gap: 12px;"><i class="fab fa-whatsapp"></i> Conversar no WhatsApp</a>
+                <a href="tel:+5511992749668" style="background: transparent; border: 2px solid #b48c5c; color: #b48c5c;" class="btn-primary"><i class="fas fa-phone-alt"></i> Ligar agora</a>
             </div>
             <div style="margin-top: 32px;">
                 <p><i class="fas fa-check-circle" style="color: #7faa5f;"></i> Atendimento humanizado · Resultados comprovados · Ambiente zen</p>
@@ -660,7 +606,7 @@
 </a>
 
 <script>
-    // Smooth scroll para links internos
+    // Smooth scroll para todos os links internos (caso algum não funcione perfeitamente)
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             const href = this.getAttribute('href');
@@ -676,54 +622,19 @@
         });
     });
 
-    // Tema escuro/claro com persistência no localStorage
-    const themeToggleBtn = document.getElementById('themeToggleBtn');
-    const themeIcon = document.getElementById('themeIcon');
-    const body = document.body;
-
-    // Carregar tema salvo
-    function loadTheme() {
-        const savedTheme = localStorage.getItem('revigore-theme');
-        if (savedTheme === 'dark') {
-            body.classList.add('dark');
-            themeIcon.classList.remove('fa-moon');
-            themeIcon.classList.add('fa-sun');
-        } else {
-            body.classList.remove('dark');
-            themeIcon.classList.remove('fa-sun');
-            themeIcon.classList.add('fa-moon');
-        }
-    }
-
-    // Alternar tema
-    function toggleTheme() {
-        if (body.classList.contains('dark')) {
-            body.classList.remove('dark');
-            localStorage.setItem('revigore-theme', 'light');
-            themeIcon.classList.remove('fa-sun');
-            themeIcon.classList.add('fa-moon');
-        } else {
-            body.classList.add('dark');
-            localStorage.setItem('revigore-theme', 'dark');
-            themeIcon.classList.remove('fa-moon');
-            themeIcon.classList.add('fa-sun');
-        }
-    }
-
-    themeToggleBtn.addEventListener('click', toggleTheme);
-    loadTheme();
-
-    // Efeito header no scroll
+    // Pequeno efeito para melhorar o header no scroll (opcional)
     window.addEventListener('scroll', function() {
         const header = document.querySelector('header');
         if (window.scrollY > 20) {
-            header.style.backgroundColor = body.classList.contains('dark') ? '#121212f2' : '#fffffff2';
+            header.style.backgroundColor = '#fffffff2';
             header.style.boxShadow = '0 8px 20px rgba(0,0,0,0.04)';
         } else {
-            header.style.backgroundColor = body.classList.contains('dark') ? '#121212dd' : '#ffffffdd';
+            header.style.backgroundColor = '#ffffffdd';
             header.style.boxShadow = 'none';
         }
     });
+    // Ajustar fallback para imagens caso algum link quebre (já garantimos pexels confiáveis)
+    console.log("Revigore Acupuntura site premium carregado");
 </script>
 </body>
 </html>
