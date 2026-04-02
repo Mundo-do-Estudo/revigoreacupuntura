@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
     <title>Acupuntura da Eco | Clínica Premium em Mogi das Cruzes</title>
-    <!-- Font Awesome 6 (Free Icons) -->
+   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Google Fonts: Inter + Playfair Display -->
+   
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * {
@@ -15,7 +15,7 @@
             box-sizing: border-box;
         }
 
-        /* Variáveis CSS para tema escuro (padrão) */
+       
         :root {
             --bg-primary: #121212;
             --bg-secondary: #1e1e1e;
@@ -36,7 +36,7 @@
             --transition: all 0.3s ease;
         }
 
-        /* Tema claro (opcional) */
+       
         body.light {
             --bg-primary: #fefcf7;
             --bg-secondary: #faf5eb;
@@ -63,7 +63,7 @@
             transition: background-color 0.3s ease, color 0.2s ease;
         }
 
-        /* Custom scroll */
+       
         ::-webkit-scrollbar {
             width: 8px;
         }
@@ -85,7 +85,7 @@
             padding: 0 32px;
         }
 
-        /* Header / Nav */
+       
         header {
             background: var(--bg-primary);
             backdrop-filter: blur(14px);
@@ -149,7 +149,7 @@
             transform: scale(1.02);
         }
 
-        /* Botão Toggle Tema */
+       
         .theme-toggle {
             background: var(--bg-card);
             border: 1px solid var(--border-light);
@@ -169,7 +169,7 @@
             background: var(--accent-green-light);
         }
 
-        /* Hero Section */
+       
         .hero {
             background: var(--bg-secondary);
             padding: 60px 0 70px;
@@ -242,7 +242,7 @@
             background-image: url('https://images.pexels.com/photos/4294420/pexels-photo-4294420.jpeg?auto=compress&cs=tinysrgb&w=800');
         }
 
-        /* Botões gerais */
+       
         .btn-primary {
             background: var(--accent-green);
             border: none;
@@ -263,7 +263,7 @@
             transform: translateY(-2px);
         }
 
-        /* Seções */
+       
         section {
             padding: 80px 0;
         }
@@ -283,7 +283,7 @@
             margin-right: auto;
         }
 
-        /* Serviços cards */
+       
         .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -317,7 +317,7 @@
             color: var(--text-secondary);
         }
 
-        /* Mapa + local */
+       
         .map-section {
             background: var(--bg-secondary);
             border-radius: 60px;
@@ -371,7 +371,7 @@
             border: 0;
         }
 
-        /* Galeria de imagens */
+       
         .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -396,7 +396,7 @@
             transform: scale(1.03);
         }
 
-        /* CTA whatsapp flutuante */
+       
         .whatsapp-float {
             position: fixed;
             bottom: 30px;
@@ -420,7 +420,7 @@
             transform: scale(1.08);
         }
 
-        /* Footer */
+       
         footer {
             background: var(--bg-footer);
             color: #cfc6b8;
@@ -456,7 +456,7 @@
             font-size: 0.8rem;
         }
 
-        /* Responsividade */
+       
         @media (max-width: 768px) {
             .navbar {
                 flex-direction: column;
@@ -543,7 +543,7 @@
 </header>
 
 <main>
-    <!-- Hero section -->
+   
     <section id="inicio" class="hero">
         <div class="container hero-grid">
             <div class="hero-info">
@@ -560,7 +560,7 @@
         </div>
     </section>
 
-    <!-- Serviços principais -->
+   
     <section id="servicos">
         <div class="container">
             <h2 class="section-title">Tratamentos que harmonizam</h2>
@@ -590,7 +590,7 @@
         </div>
     </section>
 
-    <!-- Galeria de imagens -->
+   
     <section id="galeria" style="background: var(--bg-primary); transition: var(--transition);">
         <div class="container">
             <h2 class="section-title">Ambiente acolhedor & tratamentos premium</h2>
@@ -604,7 +604,7 @@
         </div>
     </section>
 
-    <!-- Localização + Mapa -->
+   
     <section id="localizacao" class="map-section">
         <div class="container map-container">
             <div class="map-info">
@@ -624,7 +624,7 @@
         </div>
     </section>
 
-    <!-- Contato final CTA -->
+   
     <section id="contato" style="padding: 40px 0 70px;">
         <div class="container" style="text-align: center; background: var(--bg-secondary); border-radius: 48px; padding: 52px 32px; transition: var(--transition);">
             <h2 style="font-size: 2rem;">Pronto para uma vida mais equilibrada?</h2>
@@ -662,13 +662,13 @@
     </div>
 </footer>
 
-<!-- Botão flutuante WhatsApp -->
+
 <a href="https://wa.me/5511997078994?text=Olá%2C%20vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20na%20Acupuntura%20da%20Eco!" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
     <i class="fab fa-whatsapp"></i>
 </a>
 
 <script>
-    // Smooth scroll para links internos
+   
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             const href = this.getAttribute('href');
@@ -684,12 +684,12 @@
         });
     });
 
-    // Tema escuro/claro com persistência no localStorage (iniciando em dark)
+   
     const themeToggleBtn = document.getElementById('themeToggleBtn');
     const themeIcon = document.getElementById('themeIcon');
     const body = document.body;
 
-    // Carregar tema salvo ou iniciar com dark
+   
     function loadTheme() {
         const savedTheme = localStorage.getItem('eco-theme');
         if (savedTheme === 'light') {
@@ -697,14 +697,14 @@
             themeIcon.classList.remove('fa-sun');
             themeIcon.classList.add('fa-moon');
         } else {
-            // Padrão: dark
+           
             body.classList.remove('light');
             themeIcon.classList.remove('fa-moon');
             themeIcon.classList.add('fa-sun');
         }
     }
 
-    // Alternar tema
+   
     function toggleTheme() {
         if (body.classList.contains('light')) {
             body.classList.remove('light');
@@ -722,7 +722,7 @@
     themeToggleBtn.addEventListener('click', toggleTheme);
     loadTheme();
 
-    // Efeito header no scroll
+   
     window.addEventListener('scroll', function() {
         const header = document.querySelector('header');
         if (window.scrollY > 20) {
@@ -743,4 +743,4 @@
     });
 </script>
 </body>
-</html>
+</html> -->
