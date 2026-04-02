@@ -234,16 +234,35 @@
             font-size: 1.4rem;
             color: var(--accent-gold);
         }
-        .hero-img {
-            flex: 0.9;
-            border-radius: 48px;
-            min-height: 320px;
-            background-size: cover;
-            background-position: center 20%;
-            box-shadow: var(--shadow-md);
-            transition: var(--transition);
-            background-image: url('https://images.pexels.com/photos/4294420/pexels-photo-4294420.jpeg?auto=compress&cs=tinysrgb&w=800');
-        }
+  .hero-img {
+    flex: 0.9;
+    border-radius: 48px;
+    min-height: 320px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+    background-image: url('https://images.pexels.com/photos/4294420/pexels-photo-4294420.jpeg?auto=compress&cs=tinysrgb&w=800');
+}
+
+/* Correção específica para dispositivos móveis */
+@media (max-width: 768px) {
+    .hero-img {
+        min-height: 280px;
+        width: 100%;
+        background-position: center 30%;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-img {
+        min-height: 240px;
+        background-position: center 35%;
+        background-size: cover;
+    }
+}
 
         /* Botões gerais */
         .btn-primary {
